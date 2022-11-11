@@ -2,12 +2,40 @@ import React from "react";
 
 const ColorsSaved = ({ color }) => {
   return (
-    <div className="colors-saved">
-      <h4>{color.color1}</h4>
-      <h4>{color.color2}</h4>
-      <h4>{color.color3}</h4>
-      <h4>{color.color4}</h4>
-      <h4>{color.color5}</h4>
+    <div className="colorsSaved">
+      <h3>{color.title}</h3>
+      <div className="circlesRowSaved">
+        <div
+          className="circlesSaved"
+          style={{
+            backgroundColor: color.color1,
+          }}
+        ></div>
+        <div
+          className="circlesSaved"
+          style={{
+            backgroundColor: color.color2,
+          }}
+        ></div>
+        <div
+          className="circlesSaved"
+          style={{
+            backgroundColor: color.color3,
+          }}
+        ></div>
+        <div
+          className="circlesSaved"
+          style={{
+            backgroundColor: color.color4,
+          }}
+        ></div>
+        <div
+          className="circlesSaved"
+          style={{
+            backgroundColor: color.color5,
+          }}
+        ></div>
+      </div>
     </div>
   );
 };

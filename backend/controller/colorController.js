@@ -28,10 +28,11 @@ const getColor = async (req, res) => {
 };
 //create new color
 const createNewColor = async (req, res) => {
-  const { color1, color2, color3, color4, color5 } = req.body;
+  const { title, color1, color2, color3, color4, color5 } = req.body;
   //adding to DB
   try {
     const color = await Color.create({
+      title,
       color1,
       color2,
       color3,

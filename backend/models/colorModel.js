@@ -4,6 +4,10 @@ const Schema = mongoose.Schema;
 
 const colorSchema = new Schema(
   {
+    title: {
+      type: String,
+      required: true,
+    },
     color1: {
       type: String,
       required: true,
